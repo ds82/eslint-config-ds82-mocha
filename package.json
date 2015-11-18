@@ -13,7 +13,7 @@
   "keywords": [
     "eslint",
     "config",
-    "es6"
+    "mocha"
   ],
   "author": "Dennis Sänger <npm-eslint-config-ds82-15@mail.ds82.de>",
   "license": "MIT",
@@ -33,9 +33,10 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "eslint-plugin-mocha": "^1.4.1"
+    "eslint-plugin-mocha": "^1.1.0"
   },
   "devDependencies": {
+    "eslint": "1.9.0",
     "ghooks": "1.0.0",
     "validate-commit-msg": "1.0.0"
   }
