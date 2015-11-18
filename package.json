@@ -1,0 +1,42 @@
+{
+  "name": "eslint-config-ds82-mocha",
+  "version": "0.0.0-dev",
+  "description": "eslint mocha config of ds82",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ds82/eslint-config-ds82-mocha.git"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "es6"
+  ],
+  "author": "Dennis Sänger <npm-eslint-config-ds82-15@mail.ds82.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ds82/eslint-config-ds82-mocha/issues"
+  },
+  "homepage": "https://github.com/ds82/eslint-config-ds82-mocha#readme",
+  "peerDependencies": {
+    "eslint": "^1.9.0"
+  },
+  "config": {
+    "ghooks": {
+      "commit-msg": "./node_modules/.bin/validate-commit-msg && npm test"
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "eslint-plugin-mocha": "^1.4.1"
+  },
+  "devDependencies": {
+    "ghooks": "1.0.0",
+    "validate-commit-msg": "1.0.0"
+  }
+}
